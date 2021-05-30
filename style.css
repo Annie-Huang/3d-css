@@ -1,7 +1,7 @@
 :root {
   --boxColor: #0ff7;
   --rotateSpeed: 30s;
-  --bounceSpeed: 1.5s;
+  --bounceSpeed: 15s;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
   animation: ballShallow var(--bounceSpeed) infinite ease-out;
 }
 @keyframes ballShallow {
-  0%, 100% {
+  0%, 8%, 93.5%, 100% {
     transform: scale(1);
     opacity: 1;
   }
