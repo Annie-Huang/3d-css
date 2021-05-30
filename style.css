@@ -37,7 +37,9 @@ body {
 .floor {
   position: absolute;
   top: 1em; /* this is to make the floor at the center of the .cube bottom */
-  transform: translate(-50%, -50%);
+  transform:
+    translate(-50%, -50%)
+    rotateX(90deg); /* rotate the floor, you won't be able to see it without the perspective */
 
   width: 5em;
   height: 5em;
