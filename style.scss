@@ -75,10 +75,12 @@ body {
 
   width: 15em;
   height: 15em;
-  background-image: repeating-conic-gradient(
-    from 45deg,
-    #111 0deg 90deg,
-    #222 90deg 180deg
-  );
-  background-size: 1em 1em;
+  background-image:
+    radial-gradient(#0000, #000 75%), // !!! Very impressed! To make the center of the floor has more light than the edge.
+    repeating-conic-gradient(
+      from 45deg,
+      #111 0deg 90deg,
+      #222 90deg 180deg
+    );
+  background-size: 100%, 1em 1em;
 }
