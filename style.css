@@ -61,6 +61,7 @@ body {
   width: 2em;
   height: 2em;
   background: var(--boxColor);
+  transform: translateY(-50%) rotateX(90deg);
 }
 
 .floor {
