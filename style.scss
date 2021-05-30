@@ -41,6 +41,8 @@ body {
     width: 100%;
     height: 100%;
     background: var(--boxColor);
+
+    box-shadow: 0 0 0.5em #000a inset; // !!! OMG, this is mind blowingly nice!
   };
 
   .front {
@@ -63,6 +65,8 @@ body {
     height: 2em;
     background: var(--boxColor);
     transform: translateY(-50%) rotateX(90deg); // you need to do this one by one, first translateY and then rotation to see effect
+
+    box-shadow: 0 0 0.5em #000a inset; // !!! OMG, this is mind blowingly nice!
   };
 
 }
