@@ -41,7 +41,7 @@ body {
 }
 @keyframes ballBounce {
   0%, 100% {
-    bottom: 1em;
+    bottom: 0.5em;
   }
   50% {
     bottom: 3em;
