@@ -57,6 +57,13 @@ body {
     transform: rotateY(270deg) translateZ(1em);
   }
 
+  .top {
+    position: absolute;
+    width: 2em; // Don't want to width and height to change with the size of the box of the cube
+    height: 2em;
+    background: var(--boxColor);
+  };
+
 }
 .floor {
   position: absolute;

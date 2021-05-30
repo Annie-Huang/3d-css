@@ -56,6 +56,12 @@ body {
 .cube .left {
   transform: rotateY(270deg) translateZ(1em);
 }
+.cube .top {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: var(--boxColor);
+}
 
 .floor {
   position: absolute;
