@@ -48,7 +48,13 @@ body {
   transform: translateZ(1em);
 }
 .cube .back {
-  transform: rotate(180deg) translateZ(1em);
+  transform: rotateY(180deg) translateZ(1em);
+}
+.cube .right {
+  transform: rotateY(90deg) translateZ(1em);
+}
+.cube .left {
+  transform: rotateY(270deg) translateZ(1em);
 }
 
 .floor {
