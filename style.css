@@ -1,7 +1,7 @@
 :root {
   --boxColor: #0ff7;
   --rotateSpeed: 30s;
-  --bounceSpeed: 15s;
+  --bounceSpeed: 1.5s;
 }
 
 body {
