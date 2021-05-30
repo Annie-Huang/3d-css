@@ -42,6 +42,15 @@ body {
     height: 100%;
     background: var(--boxColor);
   };
+
+  .front {
+    transform: translateZ(1em);
+  }
+  .back {
+    // If you do transform: translateZ(-1em); then it is only read left to right from the inside side, not the outside side of the back
+    transform: rotate(180deg) translateZ(1em);
+  }
+
 }
 .floor {
   position: absolute;

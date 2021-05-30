@@ -44,6 +44,12 @@ body {
   height: 100%;
   background: var(--boxColor);
 }
+.cube .front {
+  transform: translateZ(1em);
+}
+.cube .back {
+  transform: rotate(180deg) translateZ(1em);
+}
 
 .floor {
   position: absolute;
