@@ -71,8 +71,15 @@ body {
   height: 2em;
 
   position: absolute;
-  top: -1em;
+  bottom: -1em;
   left: -1em;
+
+  animation: cubeHeight var(--bounceSpeed) infinite linear;
+  @keyframes cubeHeight {
+    0%, 100% { height: 1.5em }
+    8%, 93.5% { height: 2em; } // To find the perfect number of 8%, 93.5%, it can take hours to days...
+  }
+
 
   .left, .right, .front, .back {
     position: absolute;
