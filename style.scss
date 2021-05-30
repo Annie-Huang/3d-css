@@ -21,11 +21,17 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: lightblue;
 
   position: absolute;
   left: -0.5em;
   bottom: 1em;
+
+  // the mid point is 50%, so this it is === lightblue, 50%, #000
+  // Change it to lightblue, 30%, #000 or lightblue, 70%, #000 to see the very nice effect
+  background-image: radial-gradient(
+    circle at top,
+    lightblue, #000
+  );
 }
 
 .cube {
