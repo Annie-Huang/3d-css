@@ -1,7 +1,7 @@
 :root {
   --boxColor: #0ff7;
   --rotateSpeed: 30s;
-  --bounceSpeed: 2s;
+  --bounceSpeed: 1.5s;
 }
 
 body {
@@ -44,9 +44,10 @@ body {
   animation:
     ballBounce var(--bounceSpeed) infinite ease-out,
     sceneRotate var(--rotateSpeed) infinite linear reverse;
+  // 0-50%: ease-out 50%-100%: ease-in
   @keyframes ballBounce {
     0%, 100% { bottom: 1em; }
-    50% { bottom: 3em; animation-timing-function: ease-in;} // So it get slowly towards the top and faster towards the bottom.
+    50% { bottom: 3em; animation-timing-function: ease-in; } // So it get slowly towards the top and faster towards the bottom.
   }
 }
 
@@ -56,6 +57,13 @@ body {
   height: 100%;
   // You can compared the different with radial-gradient(#0007, #0000). It needs to be smaller because the ball is not as big as the cube side
   background-image: radial-gradient(#0007, #0000 50%);
+
+  animation:
+    ballShallow var(--bounceSpeed) infinite ease-out;
+  @keyframes ballShallow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(2); opacity: 0.5; animation-timing-function: ease-in; }
+  }
 }
 
 .cube {

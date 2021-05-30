@@ -1,7 +1,7 @@
 :root {
   --boxColor: #0ff7;
   --rotateSpeed: 30s;
-  --bounceSpeed: 2s;
+  --bounceSpeed: 1.5s;
 }
 
 body {
@@ -54,6 +54,18 @@ body {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(#0007, #0000 50%);
+  animation: ballShallow var(--bounceSpeed) infinite ease-out;
+}
+@keyframes ballShallow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+    animation-timing-function: ease-in;
+  }
 }
 
 .cube {
