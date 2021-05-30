@@ -38,6 +38,9 @@ body {
     circle at top,
     lightblue, #000
   );
+
+  // Keep the ball rotate at the same speed but reverse direction with sceneRotate so no one notice the ball is just a piece of paper rather than a ball. =)
+  animation: sceneRotate var(--rotateSpeed) infinite linear reverse;
 }
 
 .ballShadow {
