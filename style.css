@@ -36,6 +36,8 @@ body {
 }
 .floor {
   position: absolute;
+  top: 1em; /* this is to make the floor at the center of the .cube bottom */
+  transform: translate(-50%, -50%);
 
   width: 5em;
   height: 5em;
