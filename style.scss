@@ -1,6 +1,7 @@
 :root {
   --boxColor: #0ff7;
   --rotateSpeed: 30s;
+  --bounceSpeed: 2s;
 }
 
 body {
@@ -40,7 +41,13 @@ body {
   );
 
   // Keep the ball rotate at the same speed but reverse direction with sceneRotate so no one notice the ball is just a piece of paper rather than a ball. =)
-  animation: sceneRotate var(--rotateSpeed) infinite linear reverse;
+  animation:
+    ballBounce var(--bounceSpeed) infinite ease-out,
+    sceneRotate var(--rotateSpeed) infinite linear reverse;
+  @keyframes ballBounce {
+    0%, 100% { bottom: 1em; }
+    50% { bottom: 3em; }
+  }
 }
 
 .ballShadow {
